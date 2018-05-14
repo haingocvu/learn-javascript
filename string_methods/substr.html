@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="content">anh yêu em Tuyến</div>
+<div id="demo"></div>
+<script type="text/javascript">
+	var str = document.getElementById("content").innerHTML;
+	var substr = str.substr(str.search("Tuyến"),"Tuyến".length);
+	document.getElementById("demo").innerHTML = substr;
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" name="txtinputname" id="txtinputname" placeholder="enter name">
+	<div id="demo1"></div>
+	<button onclick="countLeng()">Count</button>
+	<script type="text/javascript">
+		function countLeng(){
+			var name = document.getElementById("txtinputname").value;
+			document.getElementById("demo1").innerHTML = name.length;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="con">anh yêu em Tuyến</div>
+<div id="demo"></div>
+<script type="text/javascript">
+	var str = document.getElementById("con").innerHTML;
+	var arr = str.split(" ");
+	var demo = document.getElementById("demo")
+	for(i in arr){
+		demo.innerHTML += arr[i] + "</br>";
+	}
+</script>
+</body>
+</html>
