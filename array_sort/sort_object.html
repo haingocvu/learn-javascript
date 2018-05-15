@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button onclick="sortByName()">Sort By Name</button>
+	<button onclick="sortByAge()">Sort By Age</button>
+	<div id="demo"></div>
+	<script type="text/javascript">
+		var demo =  document.getElementById("demo");
+		var objs = [
+			{name:"Tuyến", age: 29},
+			{name:"Anh", age: 56},
+			{name:"Bảo", age: 24},
+			{name:"Mai", age: 12},
+			{name:"Tuyết", age: 87},
+			{name:"Nga", age: 45},
+			{name:"Liên", age: 43},
+			{name:"Huệ", age: 23}
+		];
+		function sortByName(){
+			var str = "";
+			objs.sort(fsortbyname);
+			for(index in objs){
+				str += objs[index].name + "</br>";
+			}
+			demo.innerHTML = str;
+		}
+		function sortByAge(){
+			var str = "";
+			objs.sort(fsortbyage);
+			for(index in objs){
+				str += objs[index].age + "</br>";
+			}
+			demo.innerHTML = str;
+		}
+		function fsortbyname(a, b){
+			if(a.name < b.name) return -1;
+			if(a.name > b.name) return 1;
+			return 0;
+		}
+		function fsortbyage(a, b){
+			if(a.age < b.age) return -1;
+			if(a.age > b.age) return 1;
+			return 0;
+		}
+	</script>
+</body>
+</html>

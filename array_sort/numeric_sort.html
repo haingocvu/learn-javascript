@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button onclick="alphabetSort()">Alphabet sort</button>
+<button onclick="numericSort()">Numeric sort</button>
+<div id="demo"></div>
+<script type="text/javascript">
+	var points = [9,10,2,5,1,8,7,6];
+	var demo = document.getElementById("demo");
+	demo.innerHTML = points;
+	function alphabetSort() {
+		points.sort();
+		demo.innerHTML = points;
+	}
+	function numericSort() {
+		points.sort((a, b)=>{
+			return a - b;
+		});
+		demo.innerHTML = points;
+	}
+</script>
+</body>
+</html>
