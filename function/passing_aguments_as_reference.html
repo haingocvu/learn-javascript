@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<script type="text/javascript">
+	var myobj = {
+		fname: "Hello",
+		lname: "Kitty"
+	};
+	function changeName(obj){
+		obj.fname = "hi";
+	}
+	changeName(myobj);
+	document.getElementById("demo").innerHTML = myobj.fname;
+</script>
+</body>
+</html>

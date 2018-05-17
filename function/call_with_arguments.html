@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<script type="text/javascript">
+	var Person = {
+		fullname: function(age, city){
+			return this.fname + " " + this.lname + " " + age + " " + " " + city;
+		}
+	}
+	var Person1 = {
+		fname: "Tuyến",
+		lname: "Trần"
+	}
+	document.getElementById("demo").innerHTML = Person.fullname.call(Person1, 29, "Xuân Lộc");
+</script>
+</body>
+</html>

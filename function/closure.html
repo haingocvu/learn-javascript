@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<button onclick="myf()">Add</button>
+<script type="text/javascript">
+	var add = (function() {
+		var a = 0;
+		return function(){
+			return ++a;
+		}
+	})();
+	function myf(){
+		document.getElementById("demo").innerHTML = add();
+	}
+</script>
+</body>
+</html>

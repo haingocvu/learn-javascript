@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<script type="text/javascript">
+	let lover = {
+		fname: "Tuyến",
+		lname: "Trần",
+		age: 29,
+		fullname: function(){
+			return this.lname + " " + this.fname;
+		}
+	}
+	document.getElementById("demo").innerHTML = lover.fullname();
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<script type="text/javascript">
+	var person = {
+		fname: "Tuyến",
+		lname: "Trần",
+		age: 29
+	}
+	var txt = "";
+	for(let i in person){
+		txt += person[i] + "</br>";
+	}
+	document.getElementById("demo").innerHTML = txt;
+</script>
+</body>
+</html>

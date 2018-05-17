@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="number" name="mynum" id="mynum" min="10" max="100" required>
+<div id="demo"></div>
+<button onclick="checkValue()">submit</button>
+<script type="text/javascript">
+	function checkValue(){
+		let mynum = document.getElementById("mynum");
+		let demo = document.getElementById("demo");
+		if(!mynum.checkValidity()){
+			demo.innerHTML = mynum.validationMessage;
+		}else{
+			demo.innerHTML = "ok";
+		}
+	}
+</script>
+</body>
+</html>

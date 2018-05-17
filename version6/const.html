@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<script type="text/javascript">
+	//now x = 10
+	var x = 10;
+	{
+		//now x = 5
+		const x = 5;
+	}
+	//now x = 10
+	document.getElementById("demo").innerHTML = x;
+</script>
+</body>
+</html>

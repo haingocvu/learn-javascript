@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<div id="rs"></div>
+<script type="text/javascript">
+	var numarr = [
+		1,
+		2,
+		10,
+		8,
+		4,
+		9,
+		3,
+		6
+	]
+	var max = Math.max.apply(null, numarr);
+	document.getElementById("demo").innerHTML = numarr.toString();
+	document.getElementById("rs").innerHTML = max;
+</script>
+</body>
+</html>

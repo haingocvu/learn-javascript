@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="number" id="mynum" max="100" required>
+<div id="demo"></div>
+<button onclick="checkValue()">ok</button>
+<script type="text/javascript">
+	function checkValue(){
+		let mynum = document.getElementById("mynum");
+		let demo = document.getElementById("demo");
+		if (mynum.validity.rangeOverflow) {
+			demo.innerHTML = "too big";
+		}else{
+			demo.innerHTML = "ok";
+		}
+	}
+</script>
+</body>
+</html>

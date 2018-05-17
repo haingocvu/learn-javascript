@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<script type="text/javascript">
+	var mf = (...names) => {
+		let str = "";
+		for(let name of names){
+			str += name + " ";
+		}
+		return str;
+	}
+	document.getElementById("demo").innerHTML = mf("Trần", "Tuyến", "I", "Love", "You");
+</script>
+</body>
+</html>

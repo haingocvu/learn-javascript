@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<script type="text/javascript">
+	function globalFuntion(){
+		return this;
+	}
+	document.getElementById("demo").innerHTML = window.globalFuntion();
+	//document.getElementById("demo").innerHTML = window.globalFuntion();
+</script>
+</body>
+</html>

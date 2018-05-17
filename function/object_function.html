@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<script type="text/javascript">
+	var myobj = {
+		fname: "Hello",
+		lanme: "World",
+		getthis: function() {
+			return this;
+		}
+	}
+	document.getElementById("demo").innerHTML = myobj.getthis();
+</script>
+</body>
+</html>

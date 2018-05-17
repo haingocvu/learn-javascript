@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo1"></div>
+<div id="demo2"></div>
+<script type="text/javascript">
+	function Person(fname, lname, age = 18){
+		this.firstName = fname;
+		this.lastName = lname;
+		this.pAge = age;
+		this.fullname = function(){
+			console.log(this);
+			return this.firstName + " " + this.lastName;
+		}
+	}
+	var myLover1 = new Person("Tuyến", "Trần", 29);
+	var myLover2 = new Person("Nhi", "Nguyễn");
+	document.getElementById("demo1").innerHTML = myLover1.fullname() + " " + myLover1.pAge;
+	document.getElementById("demo2").innerHTML = myLover2.fullname() + " " + myLover2.pAge;
+</script>
+</body>
+</html>
