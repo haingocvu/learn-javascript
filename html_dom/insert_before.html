@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="parent">
+	<p id="first">anh yêu</p>
+	<p id="second">rất nhiều</p>
+	<button onclick="sayHello()">Click me</button>
+</div>
+<script type="text/javascript">
+	function sayHello(){
+		var p = document.getElementById("parent");
+		var sc = document.getElementById("second");
+
+		var e = document.createElement("p");
+		var tv = document.createTextNode("Trần Tuyến");
+		e.appendChild(tv);
+
+		p.insertBefore(e, sc);
+	}
+</script>
+</body>
+</html>

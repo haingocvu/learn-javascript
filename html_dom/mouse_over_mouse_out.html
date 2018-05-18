@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#demo {
+			width: 200px;
+			height: 100px;
+			background: red;
+			color: yellow;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+<div id="demo" onmouseover="sayThank()" onmouseout="sayHello()">Mouse over me</div>
+<script type="text/javascript">
+	function sayThank(){
+		document.getElementById("demo").innerHTML = "Thank you!";
+	}
+	function sayHello(){
+		document.getElementById("demo").innerHTML = "Mouse over me";
+	}
+</script>
+</body>
+</html>

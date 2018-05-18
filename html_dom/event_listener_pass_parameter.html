@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo">Click me</div>
+<script type="text/javascript">
+	var e = document.getElementById("demo");
+	e.addEventListener("click", ()=>{
+		((a, b)=>{
+			let rs = a + " " + b;
+			alert(rs);
+		})("Trần Tuyến, ", "anh yêu em");
+	})
+</script>
+</body>
+</html>

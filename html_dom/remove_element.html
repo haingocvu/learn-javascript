@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="parent">
+	<p id="firstchild">First child</p>
+	<p id="secondchild">Second child</p>
+	<button onclick="removec()">Remove</button>
+</div>
+<script type="text/javascript">
+	function removec(){
+		var p = document.getElementById("parent");
+		var fc = document.getElementById("firstchild");
+		p.removeChild(fc);
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="parent">
+	<p id="child1">child 1</p>
+	<p id="child2">child 2</p>
+</div>
+<button onclick="replacec()">replace</button>
+<script type="text/javascript">
+	function replacec(){
+		var p = document.getElementById("parent");
+		var c1 = document.getElementById("child1");
+
+		var c3 = document.createElement("p");
+		var t3 = document.createTextNode("child 3");
+		c3.appendChild(t3);
+
+		p.replaceChild(c3, c1);
+	}
+</script>
+</body>
+</html>

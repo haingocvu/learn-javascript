@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="outer">
+	<p id="inner">Click me</p>
+</div>
+<script type="text/javascript">
+	var outer = document.getElementById("outer");
+	var inner = document.getElementById("inner");
+	outer.addEventListener("click", ()=>{
+		alert("outer click after");
+	}, false)
+	inner.addEventListener("click", ()=>{
+		alert("inner click first");
+	}, false)
+</script>
+</body>
+</html>

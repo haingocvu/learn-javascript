@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo">
+	<p>Paragraph1</p>
+	<p>Paragraph2</p>
+	<p>Paragraph3</p>
+</div>
+<button onclick="changecolor()">Change color</button>
+<script type="text/javascript">
+	function changecolor(){
+		var es = document.getElementsByTagName("p");
+		for(let e of es){
+			e.style.color = "red";
+		}
+	}
+</script>
+</body>
+</html>

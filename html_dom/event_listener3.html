@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo" style="display: inline;">Over me</div>
+<div id="rs"></div>
+<script type="text/javascript">
+	let e = document.getElementById("demo");
+	let rs = document.getElementById("rs");
+	e.addEventListener("click", customf);
+	e.addEventListener("mouseover", ()=>{
+		rs.innerHTML += "ê" + "</br>";
+	})
+	e.addEventListener("mouseleave", function() {
+		rs.innerHTML += "ngu vl" + "</br>";
+	})
+	function customf(){
+		rs.innerHTML += "huynh đệ" + "</br>";
+	}
+</script>
+</body>
+</html>
