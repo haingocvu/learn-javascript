@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<select id="demo" onchange="getUser(this.value)">
+  <option value="">Select a person:</option>
+  <option value="1">huonghuong</option>
+  <option value="2">huong</option>
+</select>
+<div id="txtHint"></div>
+<script type="text/javascript">
+	var e = document.getElementById("txtHint");
+	function getUser(id){
+		if(id == "") {
+			e.innerHTML = "";
+			return;
+		}else{
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function(){
+				if(xhttp.readyState == 4 & xhttp.status == 200){
+					e.innerHTML = xhttp.responseText;
+				}
+			}
+			xhttp.open("GET", "getUser.php?id=" + id);
+			xhttp.send();
+		}
+
+	}
+</script>
+</body>
+</html>

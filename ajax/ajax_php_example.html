@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" id="demo" onkeyup="getHint()">
+<div id="rs"></div>
+<script type="text/javascript">
+	var e = document.getElementById("demo");
+	var rs =  document.getElementById("rs");
+	function getHint(){
+		setTimeout(()=>{
+			var text = e.value;
+			if(text == ""){
+			rs.innerHTML = "";
+			}else{
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function(){
+					if(xhttp.readyState == 4 && xhttp.status == 200){
+						rs.innerHTML = xhttp.responseText;
+					}
+				}
+				xhttp.open("GET", "getHint.php?q=" + text);
+				xhttp.send();
+			}
+		},1000)
+	}
+</script>
+</body>
+</html>
