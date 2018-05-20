@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<script type="text/javascript">
+	var text = '{"name":"vu huyen", "age":18}';
+	var myobj = JSON.parse(text, function(key, value){
+		if(key == "age"){
+			return 19;
+		}else{
+			return value;
+		}
+	})
+	document.getElementById("demo").innerHTML = myobj.name + " " + myobj.age;
+</script>
+</body>
+</html>

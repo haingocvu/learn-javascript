@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<script type="text/javascript">
+	var rs = "";
+	var recobj = "";
+	var objToSent = {table: "users", limit: 10};
+	var params = "data=" + JSON.stringify(objToSent);
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function(){
+		if(this.readyState == 4 && this.status == 200){
+			recobj = JSON.parse(this.responseText);
+			//console.log(recobj);
+			for(var curr of recobj){
+				rs += curr.email + "</br>";
+			}
+			document.getElementById("demo").innerHTML = rs;
+		}
+	}
+	xhttp.open("POST", "getData.php", true);
+	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhttp.send(params);
+</script>
+</body>
+</html>
