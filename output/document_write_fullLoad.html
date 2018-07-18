@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello world</h1>
+    <h2>Xin chao</h2>
+    <input type="button" value="Click me" onclick="showName()">
+    <script>
+        let showName = function () {
+            document.write('<h1>Hai Ngoc Vu</h1>')
+        }
+        /*
+        Dùng document write sau khi fullLoad thì rất nguy hiểm vì sẽ xóa sạch nội dung có trước đó.
+        và viết nội dung mới vào.
+        */
+    </script>
+</body>
+
+</html>
