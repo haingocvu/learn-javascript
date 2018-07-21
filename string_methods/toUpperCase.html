@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        function toUpper() {
+            let content = document.getElementById('content').innerHTML;
+            let rs = content.toUpperCase();
+            document.getElementById('content').innerHTML = rs;
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content">lower case</div>
+    <input type="button" value="to Upper" onclick="toUpper()">
+</body>
+
+</html>

@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>
+    <title></title>
 </head>
+
 <body>
-<div id=content>anh yêu em Tuyến</div>
-<div id="demo1"></div>
-<script type="text/javascript">
-	var str =  document.getElementById("content").innerHTML;
-	var substr = str.slice(str.search("Tuyến"));
-	document.getElementById("demo1").innerHTML = substr;
-</script>
+    <div id=content>hi Anna, how are you?</div>
+    <div id="demo1"></div>
+    <script type="text/javascript">
+        let content = document.getElementById('content').innerHTML;
+        let rs = content.slice(content.search('Anna'), content.indexOf('Anna') + 'Anna'.length);
+        document.getElementById('demo1').innerHTML = rs;
+        // slice(start, end)
+        //not include end.
+    </script>
 </body>
+
 </html>
